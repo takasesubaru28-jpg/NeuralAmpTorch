@@ -9,9 +9,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # --- 1. パス設定 ---
 # 現在のソースディレクトリ（CMakeLists.txtがある場所）の「親」を取得
 get_filename_component(PARENT_DIR "${CMAKE_CURRENT_SOURCE_DIR}" DIRECTORY)
-# その親ディレクトリの中にある vst3sdk を指す
-set(VST3_SDK_ROOT "${/vst3sdk")
-set(LIBTORCH_ROOT "${/LibTorch/release/libtorch")
+set(VST3_SDK_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/vst3sdk")
+set(LIBTORCH_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/LibTorch/release/libtorch")
 
 # --- 2. ターゲット作成 (通常のDLLとして定義) ---
 add_library(NeuralAmpTorch MODULE

@@ -1,4 +1,7 @@
-# https://github.com/jik876/hifi-gan/blob/master/models.py
+# This section (Discriminator) is adapted from HiFi-GAN 
+# https://github.com/jik876/hifi-gan
+# MIT License
+# Copyright (c) 2020 Jungil Kong
 
 import torch
 import torch.nn.functional as F

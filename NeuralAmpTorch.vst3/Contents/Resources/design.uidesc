@@ -30,10 +30,12 @@
         "attributes": {
           "bitmap": "background",
           "class": "CViewContainer",
+          "origin": "0, 0",
           "size": "800, 400",
           "mouse-enabled": "true",
-          "background-color": "~ GreyCColor", 
-          "background-color-draw-style": "filled and stroked"
+          "background-color": "~ GreyCColor",
+          "opaque": "true",
+          "background-color-draw-style": "none"
         },
         "children": {
           "ModelSelector": {
