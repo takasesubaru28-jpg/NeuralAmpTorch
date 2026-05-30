@@ -1,0 +1,7 @@
+build/*
+
+LibTorch/*
+!LibTorch/.gitkeep
+
+vst3sdk/*
+!vst3sdk/.gitkeep
