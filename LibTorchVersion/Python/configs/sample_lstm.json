@@ -1,0 +1,40 @@
+{
+  "experiment_name": "sample_lstm",
+  "use_gan": false,
+  "num_workers": 0,
+  "model_name": "LSTM",
+  "paths": {
+    "input_wav": "../../Shared/Data/sample/input/input.wav",
+    "target_dir": "../../Shared/Data/sample/target",
+    "validation_input_wav": "../../Shared/Data/sample/input/input.wav",
+    "validation_target_dir": "../../Shared/Data/sample/target"
+  },
+  "WaveNet": {
+    "WaveNet_units": 8,
+    "kernel_size": 3,
+    "WaveNet_layers": 3
+  },
+  "LSTM": {
+    "LSTM_units": 16,
+    "LSTM_layers": 1
+  },
+  "train_params": {
+    "input_size": 512,
+    "batch_size": 8,
+    "param_dim": 4,
+    "epochs": 1,
+    "lr": 0.0001,
+    "clip_grad": 0.1
+  },
+  "audio_params": {
+    "sample_rate": 44100,
+    "n_fft": 512,
+    "hop_length": 128,
+    "n_mels": 80
+  },
+  "loss_weights": {
+    "w_mel": 5,
+    "w_mse": 0.1,
+    "w_gan": 0.1
+  }
+}

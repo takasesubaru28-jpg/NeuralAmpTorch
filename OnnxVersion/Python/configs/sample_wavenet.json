@@ -1,0 +1,61 @@
+{
+  "experiment_name": "sample_wavenet",
+  "model": {
+    "type": "wavenet",
+    "onnx_name": "sample_wavenet",
+    "param_dim": 4,
+    "channels": 8,
+    "num_layers": 3,
+    "kernel_size": 3,
+    "param_embedding": 8,
+    "output_mode": "direct"
+  },
+  "paths": {
+    "input_wav": "../../Shared/Data/sample/input/input.wav",
+    "target_dir": "../../Shared/Data/sample/target"
+  },
+  "audio": {
+    "sample_rate": 44100
+  },
+  "training": {
+    "sequence_length": 512,
+    "batch_size": 2,
+    "samples_per_epoch": 4,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.000001,
+    "clip_grad": 1.0,
+    "num_workers": 0,
+    "pin_memory": false,
+    "max_cuda_memory_fraction": 0.7,
+    "step_pause_ms": 0,
+    "resume": false
+  },
+  "loss": {
+    "time_weight": 1.0,
+    "esr_weight": 0.1,
+    "stft_weight": 1.0
+  },
+  "convergence": {
+    "minimum_epochs": 1,
+    "max_epochs": 1,
+    "patience": 1,
+    "min_delta_ratio": 0.0001,
+    "lr_patience": 1,
+    "lr_factor": 0.5,
+    "min_learning_rate": 0.000001
+  },
+  "monitoring": {
+    "validation_target_count": 1,
+    "validation_batches": 1,
+    "log_every_steps": 1,
+    "evaluation_interval_epochs": 1,
+    "evaluation_seconds": 0.1
+  },
+  "gan": {
+    "enabled": false
+  },
+  "export": {
+    "block_size": 64,
+    "opset": 18
+  }
+}

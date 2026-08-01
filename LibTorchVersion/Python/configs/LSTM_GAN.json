@@ -1,0 +1,38 @@
+{
+    "experiment_name": "LSTM_GAN_1024",
+    "use_gan": true,
+    "num_workers": 1,
+    "model_name": "LSTM",
+    "paths": {
+        "input_wav": "../../Shared/Data/main/input/input.wav",
+        "target_dir": "../../Shared/Data/main/target"
+    },
+    "WaveNet": {
+        "WaveNet_units": 16,
+        "kernel_size": 3,
+        "WaveNet_layers": 8
+    },
+    "LSTM": {
+        "LSTM_units": 64,
+        "LSTM_layers": 1
+    },
+    "train_params": {
+        "input_size": 1024,
+        "batch_size": 512,
+        "param_dim": 4,
+        "epochs": 500,
+        "lr": 0.0001,
+        "clip_grad": 0.1
+    },
+    "audio_params": {
+        "sample_rate": 44100,
+        "n_fft": 512,
+        "hop_length": 128,
+        "n_mels": 80
+    },
+    "loss_weights": {
+        "w_mel": 5,
+        "w_mse": 0.1,
+        "w_gan": 0.1
+    }
+}

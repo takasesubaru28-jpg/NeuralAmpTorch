@@ -1,0 +1,93 @@
+# IDE and OS files
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+*.code-workspace
+Thumbs.db
+desktop.ini
+.DS_Store
+ehthumbs.db
+
+# Temporary, backup, and diagnostic files
+*.log
+*.log.*
+*.pid
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.swp
+*.swo
+*~
+crashdumps/
+dumps/
+
+# CMake and Visual Studio build trees
+/build/
+/build-*/
+**/build/
+**/build-*/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/CTestTestfile.cmake
+**/Makefile
+**/*.vcxproj
+**/*.vcxproj.filters
+**/*.sln
+**/*.obj
+**/*.pdb
+**/*.ilk
+**/*.idb
+**/*.tlog
+**/*.lastbuildstate
+**/*.recipe
+**/*.exp
+**/*.lib
+
+# Downloaded SDKs, runtimes, and local training data are shared by both
+# implementations and are intentionally not committed.
+/Shared/Dependencies/*
+!/Shared/Dependencies/.gitkeep
+/Shared/Data/*
+!/Shared/Data/.gitkeep
+!/Shared/Data/sample/
+!/Shared/Data/sample/**
+/OnnxVersion/third_party/
+
+# Python environments and tool caches
+**/venv/
+**/.venv/
+**/env/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.ipynb_checkpoints/
+**/.coverage
+**/htmlcov/
+
+# Training intermediates and experiment output. Trained models intended for
+# users belong only in the two distribution bundles.
+**/checkpoints/
+**/runs/
+**/logs/
+**/pids/
+**/evaluations/
+**/exports/
+**/tensorboard/
+**/wandb/
+**/lightning_logs/
+**/events.out.tfevents.*
+**/*.ckpt
+**/*.pth
+
+# Temporary copy held open by a training process during the directory
+# migration. New runs use Shared/Data/main.
+/OnnxVersion/Python/data/

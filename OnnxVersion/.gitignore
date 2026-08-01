@@ -1,0 +1,10 @@
+Python/venv/
+Python/__pycache__/
+Python/checkpoints/
+Python/exports/
+Python/runs/
+Python/logs/
+Python/pids/
+Python/data/
+VST3/build/
+third_party/

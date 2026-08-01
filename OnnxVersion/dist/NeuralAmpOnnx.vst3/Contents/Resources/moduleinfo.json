@@ -1,0 +1,44 @@
+{
+  "Name": "NeuralAmpOnnx",
+  "Version": "0.1.1",
+  "Factory Info": {
+    "Vendor": "NeuralAmpTorch",
+    "URL": "https://example.invalid",
+    "E-Mail": "mailto:developer@example.invalid",
+    "Flags": {
+      "Unicode": true,
+      "Classes Discardable": false,
+      "Component Non Discardable": false,
+    },
+  },
+  "Classes": [
+    {
+      "CID": "6F3F7A212B654D91A13A28C07B711C14",
+      "Category": "Audio Module Class",
+      "Name": "NeuralAmp ONNX",
+      "Vendor": "NeuralAmpTorch",
+      "Version": "0.1.1",
+      "SDKVersion": "VST 3.7.14",
+      "Sub Categories": [
+        "Fx",
+        "Distortion",
+      ],
+      "Class Flags": 1,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+    {
+      "CID": "13C977C19B6548E3AF51D9722838A9D2",
+      "Category": "Component Controller Class",
+      "Name": "NeuralAmp ONNX Controller",
+      "Vendor": "NeuralAmpTorch",
+      "Version": "0.1.1",
+      "SDKVersion": "VST 3.7.14",
+      "Class Flags": 0,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+  ],
+}

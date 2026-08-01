@@ -1,0 +1,41 @@
+{
+  "experiment_name": "stateful_wavenet",
+  "model": {
+    "type": "wavenet",
+    "onnx_name": "stateful_wavenet",
+    "param_dim": 4,
+    "channels": 32,
+    "num_layers": 9,
+    "kernel_size": 3,
+    "param_embedding": 32
+  },
+  "paths": {
+    "input_wav": "../../Shared/Data/main/input/input.wav",
+    "target_dir": "../../Shared/Data/main/target"
+  },
+  "audio": {
+    "sample_rate": 44100
+  },
+  "training": {
+    "sequence_length": 2048,
+    "batch_size": 4,
+    "samples_per_epoch": 4000,
+    "epochs": 200,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.000001,
+    "clip_grad": 1.0,
+    "num_workers": 0,
+    "pin_memory": false,
+    "max_cuda_memory_fraction": 0.7,
+    "step_pause_ms": 20
+  },
+  "loss": {
+    "time_weight": 1.0,
+    "esr_weight": 0.1,
+    "stft_weight": 1.0
+  },
+  "export": {
+    "block_size": 64,
+    "opset": 18
+  }
+}
