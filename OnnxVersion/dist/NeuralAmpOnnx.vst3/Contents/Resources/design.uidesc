@@ -1,0 +1,145 @@
+{
+  "vstgui-ui-description": {
+    "version": "1",
+    "bitmaps": {
+      "background": { "path": "Amp.png" },
+      "knob_anim": { "path": "knob_strip.png" },
+      "power_button": {
+        "path": "power_strip.png",
+        "scale": "1"
+      },
+      "togle": {
+        "path": "togle_strip.png",
+        "scale": "1"
+      }
+    },
+    "fonts": {},
+    "colors": {},
+    "control-tags": {
+      "GAIN": "3",
+      "FRAME_SIZE": "5",
+      "VOLUME": "6",
+      "TREBLE": "2",
+      "MIDDLE": "1",
+      "MODEL": "4",
+      "BASS": "0",
+      "BYPASS": "7"
+    },
+    "templates": {
+      "view": {
+        "attributes": {
+          "bitmap": "background",
+          "class": "CViewContainer",
+          "size": "800, 400",
+          "mouse-enabled": "true",
+          "background-color": "~ GreyCColor",
+          "background-color-draw-style": "filled and stroked"
+        },
+        "children": {
+          "ModelSelector": {
+            "attributes": {
+              "class": "COptionMenu",
+              "control-tag": "MODEL",
+              "origin": "635, 260",
+              "size": "100, 25",
+              "font": "~ NormalFont",
+              "font-color": "~ WhiteCColor",
+              "back-color": "~ BlackCColor",
+              "frame-color": "~ GreyCColor",
+              "text-inset": "5",
+              "style-3d-out": "true",
+              "mouse-enabled": "true"
+            }
+          },
+          "PowerSwitch": {
+            "attributes": {
+              "class": "COnOffButton",
+              "control-tag": "BYPASS",
+              "bitmap": "power_button",
+              "origin": "50, 240",
+              "size": "75, 75",
+              "height-of-one-image": "75",
+              "sub-pixmaps": "2",
+              "transparent": "true"
+            }
+          },
+          "FrameSelector": {
+            "attributes": {
+              "class": "COptionMenu",
+              "control-tag": "FRAME_SIZE",
+              "origin": "575, 320",
+              "size": "160, 25",
+              "font": "~ NormalFont",
+              "font-color": "~ WhiteCColor",
+              "back-color": "~ BlackCColor",
+              "frame-color": "~ GreyCColor",
+              "text-inset": "5",
+              "style-3d-out": "true",
+              "mouse-enabled": "true"
+            }
+          },
+          "BassKnob": {
+            "attributes": {
+              "class": "CAnimKnob",
+              "control-tag": "BASS",
+              "bitmap": "knob_anim",
+              "origin": "270, 245",
+              "size": "75, 75",
+              "height-of-one-image": "70",
+              "sub-pixmaps": "61",
+              "transparent": "true"
+            }
+          },
+          "MiddleKnob": {
+            "attributes": {
+              "class": "CAnimKnob",
+              "control-tag": "MIDDLE",
+              "bitmap": "knob_anim",
+              "origin": "325, 245",
+              "size": "75, 75",
+              "height-of-one-image": "70",
+              "sub-pixmaps": "61",
+              "transparent": "true"
+            }
+          },
+          "TrebleKnob": {
+            "attributes": {
+              "class": "CAnimKnob",
+              "control-tag": "TREBLE",
+              "bitmap": "knob_anim",
+              "origin": "380, 245",
+              "size": "75, 75",
+              "height-of-one-image": "70",
+              "sub-pixmaps": "61",
+              "transparent": "true"
+            }
+          },
+          "VolKnob": {
+            "attributes": {
+              "class": "CAnimKnob",
+              "control-tag": "VOLUME",
+              "bitmap": "knob_anim",
+              "origin": "435, 245",
+              "size": "75, 75",
+              "height-of-one-image": "70",
+              "sub-pixmaps": "61",
+              "transparent": "true"
+            }
+          },
+          "GainKnob": {
+            "attributes": {
+              "class": "CAnimKnob",
+              "control-tag": "GAIN",
+              "bitmap": "knob_anim",
+              "origin": "490, 245",
+              "size": "75, 75",
+              "height-of-one-image": "70",
+              "sub-pixmaps": "61",
+              "transparent": "true"
+            }
+          }
+        }
+      }
+    }
+  }
+}
